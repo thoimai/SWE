@@ -1,3 +1,4 @@
+# MongoDB deployment
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -14,7 +15,7 @@ spec:
     spec:
       containers:
       - name: mongodb
-        image: mongo:latest
+        image: mongo:5.0
         ports:
         - containerPort: 27017
         env:
@@ -29,10 +30,11 @@ spec:
               name: mongodb-secret
               key: MONGO_INITDB_ROOT_PASSWORD
 ---
+# MongoDB service
 apiVersion: v1
 kind: Service
 metadata:
-  name: mongodb
+  name: mongodb 
 spec:
   selector:
     app: mongodb

@@ -17,6 +17,7 @@ Step 5: Deploy MongoDB using Helm
 
 Step 6: Create a simple web application
 
+
 Step 7: Create a Kubernetes deployment for your application
 
 
@@ -33,6 +34,7 @@ Step 9: Access your application
 
 create 4 k8s config files to deploy simple web application with mongodb using kubernetes 
 
+
 1. configmap.yaml  > mongodb endpoint 
 
 2. secret.yaml > mongodb username and password
@@ -40,6 +42,9 @@ create 4 k8s config files to deploy simple web application with mongodb using ku
 3. service + deployment > mongodb application with internal service 
 
 4. service + deployment > our own application with external service
+
++ how to make it an external service
+    > change the service type to NodePort
 
 ###################
 1. Mongo configmap.yaml
