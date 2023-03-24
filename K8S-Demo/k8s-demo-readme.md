@@ -63,4 +63,10 @@ kubectl apply -f webapp-deployment.yaml
 
 Once the deployment is complete, you can access your web application using the Minikube IP address and the specified node port (e.g., http://<minikube_ip>:30080). To get the Minikube IP address, run:
 
-    minikube ip
+$ minikube ip
+
+$ minikube start
+$ minikube status
+$ kubectl get pod
+$ kubectl apply -f mongo-config.yaml
+$ kubectl apply -f mongo-secret.yaml
